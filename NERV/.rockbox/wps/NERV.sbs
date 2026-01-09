@@ -9,11 +9,11 @@
 %?Lt<|>
 
 # Preload Fonts
-%Fl(2,18-KodeMono-SemiBold.fnt)
-%Fl(3,22-KodeMono-SemiBold.fnt)
-%Fl(4,35-KodeMono-SemiBold.fnt)
-%Fl(5,42-KodeMono-SemiBold.fnt)
-%Fl(6,108-KodeMono-Bold.fnt)
+%Fl(2,18-KodeMonoMPlus2-SemiBold.fnt)
+%Fl(3,22-KodeMonoMPlus2-SemiBold.fnt)
+%Fl(4,35-KodeMonoMPlus2-SemiBold.fnt)
+%Fl(5,42-KodeMonoMPlus2-SemiBold.fnt)
+%Fl(6,108-KodeMonoMPlus2-Bold.fnt)
 
 # Preload Images
 %xl(T,stop_icon.bmp,0,0)
@@ -51,7 +51,18 @@
 %dr(0,0,420,1,F9EC00)
 
 #__UI Viewport
-%Vi(menuViewport,30,103,420,228,4)
+#%Vi(menuViewport,30,103,420,228,4)
+%Vi(menuViewport,30,103,420,195,4)
+
+#__Line
+%Vl(info,30,300,420,1,-)
+%dr(0,0,420,1,F9EC00)
+
+#__Now Playing
+%Vl(info,30,321,31,16,-)
+%?mp<%xd(T)|%xd(L)|%xd(Z)|%xd(F)|%xd(R)>
+%Vl(info,60,316,390,24,3)
+%al%s%ia - %it%Vs(invert)
 
 #__USB
 %Vl(usb,0,0,480,360,6)

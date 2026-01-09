@@ -7,11 +7,11 @@
 %wd
 
 #__Preload Fonts
-%Fl(2,18-KodeMono-SemiBold.fnt)
-%Fl(3,22-KodeMono-SemiBold.fnt)
-%Fl(4,35-KodeMono-SemiBold.fnt)
-%Fl(5,44-KodeMono-SemiBold.fnt)
-%Fl(6,108-KodeMono-Bold.fnt)
+%Fl(2,18-KodeMonoMPlus2-SemiBold.fnt)
+%Fl(3,22-KodeMonoMPlus2-SemiBold.fnt)
+%Fl(4,35-KodeMonoMPlus2-SemiBold.fnt)
+%Fl(5,44-KodeMonoMPlus2-SemiBold.fnt)
+%Fl(6,108-KodeMonoMPlus2-Bold.fnt)
 
 #__Preload Images
 %xl(H,BatteryStatus.bmp,18)
@@ -74,11 +74,14 @@ SHF%?ps<%xd(O,2)|%xd(O)>
 #__Album Art
 %Vl(MainDisplay,31,103,171,171,-)
 %Cl(1,1,168,168,c,c)
-%dr(0,0,171,1)%dr(0,169,171,1)%dr(0,1,1,168)%dr(169,1,1,168)
-%Cd
+%?C<%Cd|%xd(AlbumArt)>
 
-%Vl(MainDisplay,31,103,171,171,-)
-%xd(AlbumArt)
+#%Vl(MainDisplay,31,103,171,171,-)
+#%Cl(1,1,168,168,c,c)
+#%dr(0,0,171,1)%dr(0,169,171,1)%dr(0,1,1,168)%dr(169,1,1,168)
+#%Cd
+#%Vl(MainDisplay,31,103,171,171,-)
+#%xd(AlbumArt)
 
 #__Track Title
 %Vl(MainDisplay,210,103,247,48,4)
@@ -92,13 +95,13 @@ SHF%?ps<%xd(O,2)|%xd(O)>
 %Vl(MainDisplay,210,169,247,25,3)
 %al%s%?id<%id|NO ALBUM>
 
-#__File Info
-%Vl(MainDisplay,210,199,247,25,2)
-%al%s%fc | %fb kbps | %fk kHz
+#__Year
+%Vl(MainDisplay,210,199,247,25,3)
+%al%s%?iy<%iy|NO YEAR>
 
-#__Peak Meter Bars
-%Vl(MainDisplay,210,229,247,45,5)
-%pm
+#__File Info
+%Vl(MainDisplay,210,249,247,25,2)
+%al%s%fc | %fb kbps | %fk kHz
 
 #__Play/Pause Icons
 %V(30,321,31,16,-)
