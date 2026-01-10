@@ -28,7 +28,7 @@
                                                  @@@@           
                                                    @@           
                                                                 
-	NERV Version 1.0 (20260104)
+	NERV Version 1.1 (20260110)
 	eppsnl - Epps.nl - eppsnl@gmail.com
 	CC-BY-SA
 	
