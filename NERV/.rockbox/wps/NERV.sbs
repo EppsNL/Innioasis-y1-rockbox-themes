@@ -61,8 +61,8 @@
 #__Now Playing
 %Vl(info,30,321,31,16,-)
 %?mp<%xd(T)|%xd(L)|%xd(Z)|%xd(F)|%xd(R)>
-%Vl(info,60,316,390,24,3)
-%al%s%ia - %it%Vs(invert)
+%Vl(info,61,316,389,24,3)
+%al %?it<%ia - %it|STOPPED>%Vs(invert)
 
 #__USB
 %Vl(usb,0,0,480,360,6)
